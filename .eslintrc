@@ -2,10 +2,7 @@
   "extends": ["airbnb-base", "prettier"],
   "parserOptions": {
     "ecmaVersion": 9,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    }
+    "sourceType": "module"
   },
   "env": {
     "node": true,
@@ -20,8 +17,5 @@
     "react/jsx-filename-extension": 0,
     "react/prop-types": 0,
     "import/prefer-default-export": 0
-  },
-  "scripts": {
-    "test": "jest --watch --coverage"
   }
 }
