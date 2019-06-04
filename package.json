@@ -1,0 +1,8 @@
+{
+  "name": "JS-Telecortex-2-Util",
+  "version": "1.0.0",
+  "description": "A Util library for JS-Telecortex-2",
+  "main": "index.js",
+  "author": "Moobase Labs",
+  "license": "MIT"
+}
