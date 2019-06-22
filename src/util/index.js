@@ -105,8 +105,6 @@ export const FRESH_CONTEXT = {
   lastPrint: now(),
   // Brightness of all strips on the server
   brightness: 0.1,
-  // Size of canvas (if used)
-  canvasSize: 512
 };
 
 export const OPC_BODY_FIELDS = ['r', 'g', 'b'];
