@@ -1,4 +1,5 @@
 import { composeOPCHeader, composeOPCMessage } from './opc'
+require('setupTests.js');
 
 describe('composeOPCHeader', () => {
   it('works', () => {

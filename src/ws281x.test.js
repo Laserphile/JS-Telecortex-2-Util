@@ -1,4 +1,5 @@
 import { rgb2ws2811, rgb2ws2812, toWs281x3BitSymbols, pack3BitSymbols } from './ws281x';
+require('setupTests.js');
 
 describe('rgb2ws2811', () => {
   it('works', () => {
