@@ -1,5 +1,5 @@
 import {rgb2sk9822} from './sk9822'
-
+require('./setupTests.js');
 
 describe('rgb2sk9822', () => {
   it('works', () => {
