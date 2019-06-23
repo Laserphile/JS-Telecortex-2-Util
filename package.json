@@ -36,5 +36,6 @@
     "eslint-plugin-you-dont-need-lodash-underscore": "^6.5.0",
     "jest": "^24.8.0",
     "prettier": "^1.17.1"
-  }
+  },
+  "setupTestFrameworkScriptFile": "src/setupTests.js"
 }

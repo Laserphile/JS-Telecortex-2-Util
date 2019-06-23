@@ -2,3 +2,9 @@ fileignoreconfig:
 - filename: .travis.yml
   checksum: 36fc4636320adf99c414798b76a7adb2afa930f18cb78bbede8f87c8a574a400
   ignore_detectors: []
+- filename: src/gamma.js
+  checksum: cc2dabcc1cb07f3e013b01c0a5bc10b021e8c95df3f55d062cadc3beeb8a68a9
+  ignore_detectors: []
+- filename: src/setupTests.js
+  checksum: 32d1aad481448fed4fa5d8f0725a38cb8fbcd7e6cf55097ab6f22c396eb6529b
+  ignore_detectors: []
