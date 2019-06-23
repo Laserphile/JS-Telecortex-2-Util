@@ -37,5 +37,12 @@
     "jest": "^24.8.0",
     "prettier": "^1.17.1"
   },
-  "setupTestFrameworkScriptFile": "src/setupTests.js"
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "testPathIgnorePatterns": [
+      "index.js"
+    ]
+  }
 }

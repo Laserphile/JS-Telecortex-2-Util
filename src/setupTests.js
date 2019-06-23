@@ -1,4 +1,5 @@
-export const toBeCloseToBytesMatcher = {
+var expect = require('expect');
+expect.extend({
   toBeCloseToBytes(received, argument) {
     // console.log(received);
     const pass = received.length === argument.length;
@@ -20,6 +21,4 @@ export const toBeCloseToBytesMatcher = {
       pass
     };
   }
-}
-
-expect.extend(toBeCloseToBytesMatcher);
+});
