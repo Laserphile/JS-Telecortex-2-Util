@@ -1,6 +1,6 @@
 {
   "name": "@js-telecortex-2/js-telecortex-2-util",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A Util library for JS-Telecortex-2",
   "author": "Moobase Labs",
   "license": "MIT",
@@ -40,9 +40,6 @@
   "jest": {
     "setupFiles": [
       "<rootDir>/src/setupTests.js"
-    ],
-    "testPathIgnorePatterns": [
-      "index.js"
     ]
   }
 }
