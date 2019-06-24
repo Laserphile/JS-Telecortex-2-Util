@@ -9,7 +9,7 @@
     "test": "jest --watch --coverage",
     "test-ci": "jest --ci --coverage",
     "coverage": "codecov",
-    "build": "yarn run babel src --out-dir lib",
+    "build": "yarn run babel src --out-dir lib --ignore \"**/*.test.js\"",
     "test-package": "babel-node test-package.js"
   },
   "repository": {
