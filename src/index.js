@@ -4,8 +4,8 @@ import { rgbToHex, rgbToHsv } from 'colorsys';
 import chalk from 'chalk';
 
 export { opcPort, OPC_BODY_FIELDS, composeOPCHeader, composeOPCMessage } from './opc'
-export { SK9822_GAMMA, sk9822GammaCorrect, rgb2sk9822, colours2sk9822 } from './sk9822'
-export { colours2ws2811, colours2ws2812 } from './ws281x'
+export { toBeCloseToBytes } from './testing'
+export { uint8Max, uint8Bits } from './bitwise';
 
 export const msNowFloat = () => new Date().getTime();
 
