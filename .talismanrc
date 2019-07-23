@@ -8,3 +8,6 @@ fileignoreconfig:
 - filename: src/setupTests.js
   checksum: 32d1aad481448fed4fa5d8f0725a38cb8fbcd7e6cf55097ab6f22c396eb6529b
   ignore_detectors: []
+- filename: src/testing.js
+  checksum: e82ff7a4bce776c7d530679f4f745f8ad14e2c889364fe50de6e67cc5b5a7360
+  ignore_detectors: []
