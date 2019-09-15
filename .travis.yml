@@ -14,7 +14,9 @@ jobs:
     cache:
       yarn: true
   - stage: build
-    script: '"$(yarn global bin)/babel" src --out-dir lib'
+    script:
+      - yarn global add @babel/core @babel/cli
+        "$(yarn global bin)/babel" src --out-dir lib
   - stage: release
     deploy:
       provider: npm
