@@ -14,3 +14,6 @@ fileignoreconfig:
 - filename: src/index.js
   checksum: 321df2795a228631d0cb81d60c66eb8313fe3597a8046a5e4b81747961d511db
   ignore_detectors: []
+- filename: lib/index.js
+  checksum: a60386d4780f87586499e3d5a4095bb338829c1e4d1157d286113a4f838b7f87
+  ignore_detectors: []
