@@ -12,22 +12,20 @@ jobs:
     script:
       - yarn global add @babel/core @babel/cli
       - '"$(yarn global bin)/babel" src --out-dir lib'
-  - stage: release
-    deploy:
-      provider: npm
-      email: derwentx@gmail.com
-      api_key:
-        secure: T8+nkbwZHvrxUBViM0mJZICowQl5Q3jt6bd+I5RqlRNB0QGQvz88CY/tODD41hQ+DtnIwIFitzRRjklyTHXqwY8uiM++BoxpWYrC0XHaH5vc6dYCFVr9OcmPzEP20Mz1AsYgAeOlb3GiPLOyUez4bAt3qeU0RrxiG4MMuaNxyS9F2WnJQ/7AF4jK7kbdlN1TmxLarOWTKMLbmwSkjEb318ZcOIc5aX7YLRZpexWNY03VapTYbqjWxcCA1RchRUY/jaOM5a1jJzhUq2Tyt2ie30ZULHNuAKxMT+H1GMOVXAwB8DWPdfU1QPn3Hm2cFAIPJ/CdtoFqKjgJxcTmQS2wRo8bqvwHkr6ifCsxFsv64Qqj7T0U8Qe6VDDutak3jixoHczBWUZHwSe7WTfrFL7vaNrpX0Tzkmpub53JJQKvz0WjMt+JT8R7EtNaoXelADdlUqrx0YmgvuxQGllc8bBTMt2+pD0vx3DBxHlf8Bh/C1eLthIb7DteDsWt6ahxf+8GETOu4cqbagA3fL/IkqhR9P4WfLSy9yS6N0VAZHk4Y6vPG2oeTYqGGj28CX+iC0Mhu7tMbXkPNwRALcoq9wp0p3ghMGw7YrvS4HWcIPZD9IMkfNUZfo6FkIYm+HpRCN8CsfoF4RLmqPlRt9UoqomPZBUYIR1lFRAYaReJgu/B8KM=
-      on:
-        tags: true
-        repo: Laserphile/JS-Telecortex-2-Util
 stages:
 - test
 - build
-- release
 notifications:
   slack:
     rooms:
       secure: eSRPPg/r5SXob2I3y1otCpIIHLRPkVbVRksHZ2GmjH3iwyFcMwBUEFtgELO94cwjlBUhp1OmRAixrhsj/X8QhNzJzCDXwlaFeIUxRTzWfmzGLlnkcsLFwaQyTxRONrkKUmnOshaeDtypTmXELXreol4O7u63n2NG5lOIkAZQ+w/yAcidyLSWyVEo9Kq9h7cZMHKoTy629fPsZlKPTKGrEhOL8bLVeOAO3ZQm71Xo/1MZwdklR+nj58rLKQcMt8CqCFQhqGYivyi0lnMm5ldS95WynGXBEF9IFde7tMD9ubrSyzwvWJ7EKv7e69yncgNRyxJwGk2Fo4XUFMlNzpCCEaBZLPL6EnOMaFV6FLLUFB+Cc7OIGfDNsgbAq5PZzt4EusKNsHhz4VHvdNJWlDTbo1Klh6CuYhle2f9lk43rW+athPdzQq7LfD3113FkVAY8ITLPYbMNarn/eNjxgLtVhqjMTwkeNqQ5stRAGTAbHjpIMk+em9xYFb3AMTUJHzlI5uBADP5S8sMNPnXij3Np5AjJEg0WwWXAZlkWVV2mDACXTcB4NwrxFGMC7ZgdkJpqiBF9VjuzA1t13UL67ANAIRFyRlFfLyZr221R6KZL7OzykAQ5iKqdNMACwNwFBcHCzbzSVVBpjqegFvIH44hyF8qfk7/B9HXXRHfP+1fgCss=
     on_success: change
     on_failure: change
+deploy:
+  provider: npm
+  email: derwentx@gmail.com
+  api_key:
+    secure: T8+nkbwZHvrxUBViM0mJZICowQl5Q3jt6bd+I5RqlRNB0QGQvz88CY/tODD41hQ+DtnIwIFitzRRjklyTHXqwY8uiM++BoxpWYrC0XHaH5vc6dYCFVr9OcmPzEP20Mz1AsYgAeOlb3GiPLOyUez4bAt3qeU0RrxiG4MMuaNxyS9F2WnJQ/7AF4jK7kbdlN1TmxLarOWTKMLbmwSkjEb318ZcOIc5aX7YLRZpexWNY03VapTYbqjWxcCA1RchRUY/jaOM5a1jJzhUq2Tyt2ie30ZULHNuAKxMT+H1GMOVXAwB8DWPdfU1QPn3Hm2cFAIPJ/CdtoFqKjgJxcTmQS2wRo8bqvwHkr6ifCsxFsv64Qqj7T0U8Qe6VDDutak3jixoHczBWUZHwSe7WTfrFL7vaNrpX0Tzkmpub53JJQKvz0WjMt+JT8R7EtNaoXelADdlUqrx0YmgvuxQGllc8bBTMt2+pD0vx3DBxHlf8Bh/C1eLthIb7DteDsWt6ahxf+8GETOu4cqbagA3fL/IkqhR9P4WfLSy9yS6N0VAZHk4Y6vPG2oeTYqGGj28CX+iC0Mhu7tMbXkPNwRALcoq9wp0p3ghMGw7YrvS4HWcIPZD9IMkfNUZfo6FkIYm+HpRCN8CsfoF4RLmqPlRt9UoqomPZBUYIR1lFRAYaReJgu/B8KM=
+  on:
+    tags: true
+    repo: Laserphile/JS-Telecortex-2-Util
