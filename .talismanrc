@@ -17,3 +17,6 @@ fileignoreconfig:
 - filename: lib/index.js
   checksum: a60386d4780f87586499e3d5a4095bb338829c1e4d1157d286113a4f838b7f87
   ignore_detectors: []
+- filename: .travis.yml
+  checksum: 8f16e2bc5ce992d1a73344131eab66db5e633b3a90daac2ba9c4492d7ec3685b
+  ignore_detectors: []
