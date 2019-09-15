@@ -1,5 +1,5 @@
 var expect = require('expect');
-import {toBeCloseToBytes} from './testing.js'
+import {toBeCloseToBytes} from '.'
 
 expect.extend({
   toBeCloseToBytes
