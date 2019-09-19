@@ -23,7 +23,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "colorsys": "^1.0.22",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
