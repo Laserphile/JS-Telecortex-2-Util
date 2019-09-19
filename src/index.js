@@ -91,4 +91,4 @@ export const toBeCloseToBytes = (received, argument) => {
       `expected ${JSON.stringify(received)} to be close to matrix ${JSON.stringify(argument)}`,
     pass
   };
-}
+};
