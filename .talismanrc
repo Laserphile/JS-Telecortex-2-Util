@@ -23,6 +23,5 @@ fileignoreconfig:
 - filename: .travis.yml
   checksum: b7d072a72913ef90b40bfac32096e31d660adb85f057aea2551f2e3f5a88c12d
   ignore_detectors: []
-- filename: yarn.lock
-  checksum: 4d18bf08a4289efcfcc1882c542a48fb3c5fbc4e35100ba4060837f76b337a63
-  ignore_detectors: []
+scopeconfig:
+  - scope: node
